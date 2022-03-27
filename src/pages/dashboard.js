@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 /* eslint-disable react/jsx-no-constructed-context-values */
 /* eslint-disable react/forbid-prop-types */
 /* eslint-disable no-unused-vars */
@@ -10,16 +11,15 @@ import useUser from "../hooks/use-user";
 import LoggedInUserContext from "../context/logged-in-user";
 
 export default function Dashboard({ user: loggedInUser }) {
-  const { user, setActiveUser } = useUser(loggedInUser);
+  const { user, setActiveUser } = useUser(loggedInUser?.uid);
   useEffect(() => {
     document.title = "Instagram";
   }, []);
-
   return (
     <LoggedInUserContext.Provider value={{ user, setActiveUser }}>
       <div className="bg-gray-background">
         <Header />
-        <div className="grid grid-cols-3 gap-4 justify-between mx-auto max-w-screen-lg">
+        <div className="sm:grid grid-cols-3 gap-4 justify-between mx-auto max-w-screen-lg">
           <Timeline />
           <Sidebar />
         </div>
@@ -28,5 +28,5 @@ export default function Dashboard({ user: loggedInUser }) {
   );
 }
 Dashboard.propTypes = {
-  user: PropTypes.object.isRequired,
+  user: PropTypes.string,
 };
