@@ -1,13 +1,7 @@
-<<<<<<< HEAD
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-nested-ternary */
 
 import { firebase, arrayUnion, arrayRemove } from "../lib/firebase";
-=======
-/* eslint-disable import/prefer-default-export */
-/* eslint-disable no-unused-vars */
-import { firebase } from "../lib/firebase";
->>>>>>> 7ae4ad4a182b28aa5d9d73ad9f3d040d6bc884b0
 import "firebase/compat/firestore";
 
 export async function doesUsernameExists(username) {
@@ -19,7 +13,6 @@ export async function doesUsernameExists(username) {
 
   return result.docs.length > 0;
 }
-<<<<<<< HEAD
 export async function getUserByUsername(username) {
   const result = await firebase
     .firestore()
@@ -45,8 +38,6 @@ export async function getUserPhotosByUsername(username) {
     docId: item.id,
   }));
 }
-=======
->>>>>>> 7ae4ad4a182b28aa5d9d73ad9f3d040d6bc884b0
 // get user from the firestore where userId === userId (passed from the auth)
 export async function getUserByUserId(userId) {
   const result = await firebase
@@ -61,7 +52,6 @@ export async function getUserByUserId(userId) {
 
   return user;
 }
-<<<<<<< HEAD
 
 // check all conditions before limit results
 export async function getSuggestedProfiles(userId, following) {
@@ -186,5 +176,3 @@ export async function toggleFollow(
     isFollowingProfile
   );
 }
-=======
->>>>>>> 7ae4ad4a182b28aa5d9d73ad9f3d040d6bc884b0

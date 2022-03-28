@@ -15,15 +15,9 @@ export default function Header() {
   const { firebase } = useContext(FirebaseContext);
   const history = useNavigate();
   return (
-<<<<<<< HEAD
     <header className="h-16 bg-white shadow-md mb-5">
       <div className="container mx-auto max-w-screen-lg h-full">
         <div className="flex justify-between h-full ml-6 mr-5">
-=======
-    <header className="h-16 bg-white border-b border-gray-primary mb-8">
-      <div className="container mx-auto max-w-screen-lg h-full">
-        <div className="flex justify-between h-full">
->>>>>>> 7ae4ad4a182b28aa5d9d73ad9f3d040d6bc884b0
           <div className="text-gray-700 text-center flex items-center align-items cursor-pointer">
             <h1 className="flex justify-center w-full">
               <Link to={ROUTES.DASHBOARD} aria-label="Instagram logo">
@@ -60,20 +54,12 @@ export default function Header() {
                   title="Sign Out"
                   onClick={() => {
                     firebase.auth().signOut();
-<<<<<<< HEAD
                     history(ROUTES.LOGIN);
-=======
-                    history.push(ROUTES.LOGIN);
->>>>>>> 7ae4ad4a182b28aa5d9d73ad9f3d040d6bc884b0
                   }}
                   onKeyDown={(event) => {
                     if (event.key === "Enter") {
                       firebase.auth().signOut();
-<<<<<<< HEAD
                       history(ROUTES.LOGIN);
-=======
-                      history.push(ROUTES.LOGIN);
->>>>>>> 7ae4ad4a182b28aa5d9d73ad9f3d040d6bc884b0
                     }
                   }}
                 >
@@ -96,11 +82,7 @@ export default function Header() {
                   <div className="flex items-center cursor-pointer">
                     <Link to={`/p/${user?.username}`}>
                       <img
-<<<<<<< HEAD
                         className="rounded-full h-7 w-7 flex"
-=======
-                        className="rounded-full h-8 w-8 flex"
->>>>>>> 7ae4ad4a182b28aa5d9d73ad9f3d040d6bc884b0
                         src={`/images/avatars/${user?.username}.jpg`}
                         alt={`${user?.username} profile`}
                         onError={(e) => {

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-nested-ternary */
 import React from "react";
@@ -24,10 +23,4 @@ export default function Timeline() {
       )}
     </div>
   );
-=======
-import React from "react";
-
-export default function Timeline() {
-  return <div>timeline</div>;
->>>>>>> 7ae4ad4a182b28aa5d9d73ad9f3d040d6bc884b0
 }

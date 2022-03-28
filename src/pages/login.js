@@ -34,23 +34,14 @@ export default function Login() {
   }, []);
 
   return (
-<<<<<<< HEAD
     <div className="container flex justify-center mx-auto max-w-screen-md items-center h-screen">
       <div className="flex hidden sm:block">
-=======
-    <div className="container flex mx-auto max-w-screen-md items-center h-screen">
-      <div className="flex w-3/5">
->>>>>>> 7ae4ad4a182b28aa5d9d73ad9f3d040d6bc884b0
         <img
           src="/images/iphone-with-profile.jpg"
           alt="iPhone with Instagram app"
         />
       </div>
-<<<<<<< HEAD
       <div className="flex flex-col w-4/5 m-1">
-=======
-      <div className="flex flex-col w-2/5">
->>>>>>> 7ae4ad4a182b28aa5d9d73ad9f3d040d6bc884b0
         <div className="flex flex-col items-center bg-white p-4  border border-gray-primary rounded mb-2">
           <h1 className="flex justify-center w-full">
             <img
