@@ -22,7 +22,11 @@
     "react-scripts:start": "react-scripts start",
     "react-scripts:dist": "react-scripts build",
     "start": "run-p watch:css react-scripts:start",
+<<<<<<< HEAD
     "build": "react-scripts build",
+=======
+    "build": "run-s build:css react-scripts:dist",
+>>>>>>> 7ae4ad4a182b28aa5d9d73ad9f3d040d6bc884b0
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -45,7 +49,10 @@
     ]
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@welldone-software/why-did-you-render": "^6.2.3",
+=======
+>>>>>>> 7ae4ad4a182b28aa5d9d73ad9f3d040d6bc884b0
     "autoprefixer": "^10.4.2",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.10.0",

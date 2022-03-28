@@ -5,6 +5,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import * as ROUTES from "../constants/routes";
+<<<<<<< HEAD
 import Header from "../components/header";
 
 export default function notFound() {
@@ -33,5 +34,31 @@ export default function notFound() {
         </div>
       </div>
     </>
+=======
+
+export default function notFound() {
+  return (
+    <div className="w-screen h-screen flex justify-center items-center">
+      <div className="border border-gray-primary xl-8 rounded w-96 h-56 flex flex-col justify-center items-center">
+        <h1 className="flex justify-center w-full">
+          <img
+            readOnly
+            src="/images/logo.png"
+            alt="Instagram"
+            className="mt-2 w-6/12 mb-4"
+          />
+        </h1>
+        <p className="text-center text-2xl font-bold my-5">
+          404 Page not found
+        </p>
+        <Link
+          to={ROUTES.LOGIN}
+          className="bg-blue-medium	rounded-full px-8 py-2 text-white"
+        >
+          TO HOME
+        </Link>
+      </div>
+    </div>
+>>>>>>> 7ae4ad4a182b28aa5d9d73ad9f3d040d6bc884b0
   );
 }
