@@ -3,15 +3,11 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
   },
   purge: {
-<<<<<<< HEAD
     content: [
       // Example content paths...
       "./public/**/*.html",
       "./src/**/*.{js,jsx,ts,tsx,vue}",
     ],
-=======
-    content: ["./src/**/*.js", "./src/**/**/*.js"],
->>>>>>> 7ae4ad4a182b28aa5d9d73ad9f3d040d6bc884b0
   },
   theme: {
     fill: (theme) => ({
